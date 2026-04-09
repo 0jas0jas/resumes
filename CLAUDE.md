@@ -21,11 +21,14 @@ I'll tell you the company name, role, and paste the job description. Then:
 4. Compile it: `pdflatex -interaction=nonstopmode -output-directory=output output/YYYY-MM-DD_Company_Role.tex`
    - Run it twice if there are any reference/layout issues
    - Tell me if pdflatex isn't installed
-5. If I asked for a cover letter, write it to `cover-letters/YYYY-MM-DD_Company_Role.txt`
-   - Enthusiastic and specific to this company and role
-   - Explain why I want THIS job at THIS company (infer from the JD)
-   - Why I'm a strong fit — connect my actual experience to their needs
-   - No generic filler like "I am writing to express my interest"
+5. If I asked for a cover letter:
+   - Write it as a LaTeX document to `cover-letters/YYYY-MM-DD_Company_Role.tex`
+     - Clean, professional formatting — full letter layout with my name/contact at the top
+     - Enthusiastic and specific to this company and role
+     - Explain why I want THIS job at THIS company (infer from the JD)
+     - Why I'm a strong fit — connect my actual experience to their needs
+     - No generic filler like "I am writing to express my interest"
+   - Compile it: `pdflatex -interaction=nonstopmode -output-directory=cover-letters cover-letters/YYYY-MM-DD_Company_Role.tex`
 
 ## Preferences
 - Prioritize projects with real users or real impact over coursework
