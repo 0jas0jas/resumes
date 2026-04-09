@@ -1,0 +1,258 @@
+%-------------------------
+% Resume in Latex
+% Author : Ojas Srivastava
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ojas Srivastava} \\ \vspace{1pt}
+    \small (514) 237-7035 $|$ \href{mailto:ojas@knowojas.com}{ojas@knowojas.com} $|$ 
+    \href{https://linkedin.com/in/0jas0jas}{linkedin.com/in/0jas0jas} $|$
+    \href{https://knowojas.com/}{knowojas.com} $|$
+    \href{https://github.com/0jas0jas}{github.com/0jas0jas}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McGill University}{Montréal, QC}
+      {Bachelor of Science in Mathematics and Computer Science}{Aug. 2023 -- May. 2027}
+  \resumeSubHeadingListEnd
+      \textbf{Relevant Coursework}{: Algorithms \& Data Structures, Software Design, Operating Systems, Compiler Design, Theory of Computation, Software Systems, Programming Languages \& Paradigms}
+      
+ %-----------Certs-----------
+%-----------Certs - Ultra Compact-----------
+\section{Certifications}
+\textbf{\hspace{5pt} Cisco Certified Network Associate (CCNA)} \hfill \textit{In Progress}\vspace{-8pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Software Development Intern $|$ \textnormal{Vue.js, WCAG, Java (Spring Boot), MySQL} }{Apr. 2025 -- Aug. 2025}
+    {\href{https://nakisa.com}{Nakisa} | Full-time}{Montréal, QC}
+    \resumeItemListStart
+      \resumeItem{Engineered accessibility across multiple web apps used by enterprise clients, strengthening keyboard and screen reader support.}
+      \resumeItem{Conducted accessibility audits with Axe and Lighthouse and resolved critical WCAG issues.}
+      \resumeItem{Built Java backend services and fixed database bugs, improving query performance and system reliability.}
+      \resumeItem{Partnered with UX and frontend teams to implement high-contrast themes and ARIA improvements.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Developer $|$ \textnormal{React, GraphQL, PostgreSQL, C/C++, Python} }{Mar. 2023 -- Apr. 2025}
+    {\href{https://codeday.org}{CodeDay} | Full-time}{Remote / Seattle, WA}
+    \resumeItemListStart
+      \resumeItem{Developed and maintained a Next.js frontend with GraphQL API integration, improving page load times.}
+      \resumeItem{Built PostgreSQL backend pipelines that processed large daily record volumes and streamlined internal workflows.}
+      \resumeItem{Created Python and C++ automation tools that saved significant manual work each week.}
+      \resumeItem{Led a global team delivering hackathons for over 1,000 participants annually.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Development Intern $|$ \textnormal{Next.js, Python, Git, React, AWS}}{Jan. 2024 -- Jun. 2024}
+    {MMPG College | Full-time}{Kalakankar, India}
+    \resumeItemListStart
+      \resumeItem{Led a full website redesign that improved UI/UX and accessibility for students and faculty.}
+      \resumeItem{Refactored the Python backend and PostgreSQL access layer to reduce staff query time.}
+      \resumeItem{Deployed the platform on AWS for reliable hosting and improved site availability.}
+      \resumeItem{Trained students through workshops on Next.js, React, and Git, helping launch new projects.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  % \resumeSubheading
+  %   {Developer}{Jan. 2024 -- Present}
+  %   {Hack4Impact}{Montréal, QC}
+  %   \resumeItemListStart
+  %     \resumeItem{Spearheaded a team of 5 in full-stack development projects benefiting three non-profit organizations.}
+  %     \resumeItem{Engineered software solutions that impacted 50,000+ individuals in underrepresented communities.}
+  %     \resumeItem{Boosted online engagement for partner organizations by 40\%.}
+  %   \resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{Projects \href{https://knowojas.com/projects}{\small\textit{(more at knowojas.com)}}}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\href{https://github.com/CachyOS/linux-cachyos}{\textbf{CachyOS Linux Distribution (Open-Source Contributor)}} $|$ Linux Kernel, C, Bash, Git, Docker}{Ongoing, 2025}
+\resumeItemListStart
+  \resumeItem{Contributed optimizations to CachyOS, improving kernel performance and package build scripts for better stability in dev environments.}
+  \resumeItem{Developed Bash automation tools and Docker configs to streamline kernel compilation and testing, reducing build times by 25\% on my local setup.}
+  \resumeItem{Submitted PRs for web-facing docs and Arch package maintenance, enhancing usability for developers deploying cloud-native apps like AWS/Docker stacks.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+    {\href{https://nuclearapp.ca}{\textbf{Nuclear (AI-Powered Notetaking Startup)}} $|$ Next.js, Supabase, Prisma, Redis, PyTorch}{Jun. 2025}
+    \resumeItemListStart
+      \resumeItem{Co-founded an AI-powered notetaking app with 100+ active users, driving 40\% monthly user growth and 500+ notes processed daily.}
+      \resumeItem{Trained a transformer-based model on 50,000+ handwritten and typed notes to generate personalized study recommendations.}
+      \resumeItem{Built the ML pipeline for preprocessing, training, evaluation, and inference through a FastAPI backend.}
+      \resumeItem{Implemented semantic search with vector embeddings using Perplexity Sonar, cutting retrieval time by 60\% and reaching 95\% accuracy.}
+    \resumeItemListEnd
+
+
+
+\resumeProjectHeading
+    {\href{https://github.com/0jas0jas/symlang}{\textbf{SymLang (McHacks Winner)}} $|$ JavaScript, Next.js, TensorFlow.js, Computer Vision}{Feb. 2025}
+    \resumeItemListStart
+      \resumeItem{Built an AI-powered gesture recognition system for hands-free programming, reaching 90\% accuracy across 15+ gestures.}
+      \resumeItem{Trained a TensorFlow.js classification model on 10,000+ samples to support real-time gesture input.}
+      \resumeItem{Showcased the project at McHacks 2025 as an accessibility-focused coding interface.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\href{https://github.com/0jas0jas/codeview}{\textbf{CodeView (UofT Hacks Winner)}} $|$ Next.js, Tesseract.js, Docker, PostgreSQL, Prisma}{Jan. 2025}
+    \resumeItemListStart
+      \resumeItem{Built an app that scans handwritten code and generates Big-O complexity analysis for students.}
+      \resumeItem{Implemented OCR with Tesseract.js, achieving 90\% scan accuracy and real-time analysis.}
+      \resumeItem{Added a feedback system that rates code efficiency and suggests improvements.}
+    \resumeItemListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript/TypeScript, Python, C++, OCaml} \\
+     \textbf{Technologies}{: React, Next.js, FastAPI, PostgreSQL, MongoDB, Docker, Git, PyTorch, Three.js}
+    }}
+\end{itemize}
+
+
+% \resumeProjectHeading
+%     {\href{https://github.com/0jas0jas}{\textbf{CachyOS}} $|$ C/C++, Bash, Linux Kernel, Arch Packaging}{2025 -- Present}
+%     \resumeItemListStart
+%       \resumeItem{Contributed bug fixes, optimizations, and packaging scripts to CachyOS (Arch-based distro); merged PRs improving kernel scheduler performance by 15\% for gaming workloads.}
+%       \resumeItem{Developed custom KDE tweaks and performance patches used by 10k+ users.}
+%     \resumeItemListEnd
+
+
+
+
+  % \resumeProjectHeading
+  %   {\textbf{LiteraLingo} $|$ React, Docker, PostgreSQL, Prisma}{Aug. 2024}
+  %   \resumeItemListStart
+  %     \resumeItem{Built an educational app with Hack4Impact to help autistic children learn English.}
+  %     \resumeItem{Leveraged React for UI, Prisma for database management, and Docker for deployment.}
+  %     \resumeItem{Crafted adaptive exercises tailored for neurodiverse learners.}
+  %   \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\textbf{Sheep in Sheep’s Clothing} $|$ C\#, Unity}{Jan. 2025}
+  %   \resumeItemListStart
+  %     \resumeItem{Constructed a stealth-based puzzle game for McGameJam 2025, focusing on innovative gameplay mechanics.}
+  %     \resumeItem{Leveraged Unity for game development and C\# for scripting, creating a polished player experience.}
+  %     \resumeItem{Collaborated with a team of 8 on level design, character art, and AI behaviors.}
+  %   \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\textbf{McMayhem} $|$ Godot, GDScript}{Jan. 2024}
+  %   \resumeItemListStart
+  %     \resumeItem{Executed a 48-hour GameJam with a 3-member team, reconfiguring 10+ 3D models.}
+  %     \resumeItem{Ranked in the top 5 out of 50 entries.}
+  %   \resumeItemListEnd
+
+  % \resumeProjectHeading
+  %   {\textbf{Mon Cahier} $|$ Go, JavaScript, Hugo}{May. 2023}
+  %   \resumeItemListStart
+  %     \resumeItem{Created a blog on computer science and mathematics, attracting 1,000+ monthly readers.}
+  %     \resumeItem{Published 15+ articles in McGill University’s The Abstract magazine.}
+  %     \resumeItem{Deployed the site with Go and Hugo, maintaining 99.9\% uptime.}
+  %   \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,334 @@
+
+
+
+
+
+%-------------------------
+% Resume in Latex
+% Author : Ojas Srivastava
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ojas Srivastava} \\ \vspace{1pt}
+    \small 514-237-7035 $|$ \href{mailto:ojas@knowojas.com}{\underline{ojas@knowojas.com}} $|$ 
+    \href{https://linkedin.com/in/0jas0jas}{\underline{linkedin.com/in/0jas0jas}} $|$
+    \href{https://knowojas.com/}{\underline{knowojas.com/}} $|$
+    \href{https://github.com/0jas0jas}{\underline{github.com/0jas0jas}}
+\end{center}
+
+%-----------SUMMARY-----------
+% \section{}
+% \resumeSubHeadingListStart
+% \item
+% Motivated Mathematics and Computer Science student at McGill University with a deep interest in film history. Passionate about hosting hackathons and fostering communities through computer science initiatives. Experienced in leading global teams, developing software solutions, and organizing large-scale events. Adept at using various programming languages and technologies to create impactful projects and drive community engagement.
+% \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, Python, C++, R, OCaml, GDScript} \\
+     \textbf{Frameworks}{: React, Next.js, Tailwind CSS, Express.js, FastAPI, Django, Unity (C\#), Godot (GDScript)} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitLab, Docker, JUnit, PyTest, Postman, MySQL, PostgreSQL, MongoDB} \\
+     \textbf{Libraries}{: Next.Js, Axios, NextUI, Three.js, Chart.Js, TailwindCSS, Flask, FastAPI, Tensorflow, pyTorch}
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McGill University}{Montréal, QC}
+      {Bachelor of Science in Mathematics and Computer Science}{Aug. 2023 -- May 2026}
+  \resumeSubHeadingListEnd
+      \textbf{Relevant Coursework}{: Algorithms and Data Structures (Java), Software Design (Java), Programming Languages and Paradigms (OCaml), Software Systems (C Lang, Bash), Computer Systems (MIPS Assembly), Compiler Design, Theory of Computation, Statistics (R Lang), Probability, Numerical Analysis (Matlab), Abstract Algebra (1\&2), Ordinary Differential Equations, Advanced Calculus}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Development Intern}{Apr. 2025 -- Present}
+  {Nakisa - Full-time}{Montreal, Canada}
+  \resumeItemListStart
+    \resumeItem{Improved accessibility features, ensuring WCAG 2.1 compliance for 5,000+ users}
+    \resumeItem{Optimized keyboard navigation and screen reader support, reducing navigation time by 30\%}
+    \resumeItem{Performed audits with Axe and Lighthouse, fixing 50+ issues to enhance usability}
+    \resumeItem{Worked with UX and frontend teams to add high-contrast themes and ARIA support, boosting adoption by 20\%}
+  \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Software Developer}{Mar. 2023 -- Apr. 2025}
+      {CodeDay - Part-time}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built and optimized website using Next.js and GraphQL, reducing load time by 30\%}
+        \resumeItem{Developed internal tools in Python and C++, automating workflows and cutting manual effort by 40\%}
+        \resumeItem{Created APIs and integrated third-party services, improving backend efficiency by 25\%}
+        \resumeItem{Led a global team of 15, delivering hackathons for 1,000+ participants annually}
+      \resumeItemListEnd
+
+    
+
+
+    \resumeSubheading
+      {Web Development Intern}{Jan. 2024 -- Jun. 2024}
+      {MMPG College - Full-time}{Kalakankar, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated with faculty to redesign the college’s website, enhancing user interface and accessibility}
+        \resumeItem{Conducted over 20 sessions on web development tools such as Python, GitHub, and React, enabling students to build personal projects}
+        \resumeItem{Developed backend and refactored student database to allow for easy access for college staff}
+      \resumeItemListEnd
+
+      
+
+          \resumeSubheading
+      {Developer}{Jan 2024 -- Present}
+      {Hack4Impact - Volunteer}{Montreal, QC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 5 in full-stack development projects benefiting 3 non-profit organizations}
+        \resumeItem{Developed software solutions that impacted over 50,000 individuals in underrepresented sectors}
+        \resumeItem{Facilitated the growth of non-profit organizations, increasing their online engagement by 40\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{SymLang} $|$ JavaScript, Next.js, TensorFlow.js, Computer Vision}{Jan. 2025}
+    \resumeItemListStart
+        \resumeItem{Developed an AI-powered gesture recognition system to translate hand movements into executable code, enabling hands-free programming.}
+        \resumeItem{Trained a custom classification model using TensorFlow.js, achieving high accuracy in recognizing programming constructs like IF-THEN-ELSE, WHILE, and FOR loops.}
+        \resumeItem{Showcased at McHacks 2025, demonstrating an innovative approach to accessibility and intuitive coding.}
+    \resumeItemListEnd
+            \resumeProjectHeading
+          {\textbf{Popcorn} $|$ React, Python, NextJs, Scikit-learn}{Apr. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a NextJs application to recommend movie titles using Spotify playlists, achieving 90\% user satisfaction}
+            \resumeItem{Generated a custom dataset of 10,000+ songs and movies through web scraping}
+            \resumeItem{Trained a machine learning model with 85\% accuracy}
+          \resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{CodeView} $|$ Next.js, Tesseract React, Docker, PostgreSQL, Prisma}{Aug. 2025}
+  \resumeItemListStart
+    \resumeItem{Developed an app with Hack4Impact to help autistic children learn English.}
+    \resumeItem{Utilized React for UI, Prisma for database management, and Docker for deployment.}
+    \resumeItem{Designed an adaptive platform for neurodiverse learners.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Where's My Jam?} $|$ Next.js, FastAPI, Python}{Nov. 2024}
+  \resumeItemListStart
+    \resumeItem{Developed a gamified grocery app with four interactive modes, enhancing user engagement.}
+    \resumeItem{Implemented a health-tracking system and recipe suggestions using barcode scanning.}
+    \resumeItem{Leveraged Next.js for frontend, FastAPI for backend, and Python for functionality.}
+  \resumeItemListEnd
+
+
+\resumeProjectHeading
+  {\textbf{OCaml Programming Language Modules} $|$ OCaml}{Mar. 2024}
+  \resumeItemListStart
+    \resumeItem{Built custom modules, including "if-then-else" statements and abstract data types.}
+    \resumeItem{Focused on modular design to improve code reusability and functionality.}
+    \resumeItem{Enhanced language learning through clean and efficient syntax.}
+  \resumeItemListEnd
+  
+  \resumeProjectHeading
+  {\textbf{LiteraLingo} $|$ React, Docker, PostgreSQL, Prisma}{Aug. 2024}
+  \resumeItemListStart
+    \resumeItem{Developed an app with Hack4Impact to help autistic children learn English.}
+    \resumeItem{Utilized React for UI, Prisma for database management, and Docker for deployment.}
+    \resumeItem{Designed an adaptive platform for neurodiverse learners.}
+  \resumeItemListEnd
+
+
+\resumeProjectHeading
+  {\textbf{Universities Allied for Essential Medicines} $|$ React, MongoDB, Docker}{Jan. 2024}
+  \resumeItemListStart
+    \resumeItem{Built a resource-tracking app for UAEM through Hack4Impact.}
+    \resumeItem{Used React for UI, MongoDB for data management, and Docker for scalability.}
+    \resumeItem{Optimized functionality and ensured secure data handling.}
+  \resumeItemListEnd
+
+
+        \resumeProjectHeading
+          {\textbf{Sheep in Sheep's Clothing} $|$ C\#, Unity}{Jan. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a stealth-based puzzle game for McGameJam 2025, focusing on innovative gameplay mechanics}
+            \resumeItem{Utilized Unity for game development and C\# for scripting, creating a seamless and engaging player experience}
+            \resumeItem{Collaborated with a team of 8 to design levels, characters, and AI behaviors, resulting in a polished final product}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{McMayhem} $|$ Godot, GDScript}{Jan. 2024}
+          \resumeItemListStart
+            \resumeItem{Completed a 48-hour GameJam with a 3-member team, reconfiguring 10+ 3D models}
+            \resumeItem{Achieved recognition as one of the top 5 games out of 50 entries}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Conway's Game of Life} $|$ JavaScript, HTML/CSS}{Jun. 2021}
+          \resumeItemListStart
+            \resumeItem{Implemented a mathematical simulation using Vanilla JavaScript, with over 500 lines of code}
+            \resumeItem{Developed a 3-dimensional data structure, enhancing simulation performance by 20\%}
+            \resumeItem{Utilized pure HTML/CSS and JavaScript to ensure compatibility across all browsers}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Mon Cahier} $|$ GoLang, JavaScript, Web Development}{May 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a blog on Computer Science and Mathematics, attracting over 1,000 monthly readers}
+            \resumeItem{Published 15+ articles in McGill University's The Abstract magazine}
+            \resumeItem{Deployed the site using GoLang and Hugo static site generator, achieving 99.9\% uptime}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Can Computer Vision be Trusted with Autonomous Vehicles yet?} $|$ Python, OpenCV}{Mar. 2022}
+          \resumeItemListStart
+            \resumeItem{Achieved an A-grade for a Cambridge International Project Qualification}
+            \resumeItem{Implemented a real-time Python Computer Vision system with 95\% detection accuracy}
+            \resumeItem{Visualized data using MatPlotLib and conducted object detection with OpenCV}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{ChatBot with Python Workshop} $|$ Python, Pytz, Chatterbot}{Jan 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an AI ChatBot using Python and Chatterbot.py, handling 1,000+ queries}
+            \resumeItem{Trained the bot with custom conversation data for specialized interactions}
+            \resumeItem{Conducted a successful workshop with 50+ participants, providing a GitHub tutorial}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{YouTube Comment Analyser} $|$ Python, numpy, pandas}{Jun 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a classification model for YouTube comment analysis, achieving 86.7\% accuracy}
+            \resumeItem{Created and trained on a dataset with over 1 million comments}
+            \resumeItem{Utilized numpy and pandas for data manipulation and analysis}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TrieApplication} $|$ JavaScript, axios, figlet}{Jun 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a custom trie data structure for search applications, handling 10,000+ entries}
+            \resumeItem{Implemented server-client interface for efficient data retrieval}
+            \resumeItem{Created methods for insert, remove, display, and wordsWithPrefix}
+          \resumeItemListEnd
+
+
+
+
+          
+    \resumeSubHeadingListEnd
+%
+
+
+%-------------------------------------------
+\end{document}
