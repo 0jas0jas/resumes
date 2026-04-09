@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Ojas Srivastava
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ojas Srivastava} \\ \vspace{1pt}
+    \small (514) 237-7035 $|$ \href{mailto:ojas@knowojas.com}{ojas@knowojas.com} $|$
+    \href{https://linkedin.com/in/0jas0jas}{linkedin.com/in/0jas0jas} $|$
+    \href{https://knowojas.com/}{knowojas.com} $|$
+    \href{https://github.com/0jas0jas}{github.com/0jas0jas}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McGill University}{Montréal, QC}
+      {Bachelor of Science in Mathematics and Computer Science}{Aug. 2023 -- May 2027}
+  \resumeSubHeadingListEnd
+  \textbf{Relevant Coursework}{: Operating Systems (C/C++, Linux), Software Systems (C, Bash), Computer Systems (MIPS Assembly), Algorithms \& Data Structures, Compiler Design, Programming Languages \& Paradigms}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Software Developer $|$ \textnormal{C/C++, Python, React, GraphQL, PostgreSQL}}{Mar. 2023 -- Apr. 2025}
+    {\href{https://codeday.org}{CodeDay} | Full-time}{Remote / Seattle, WA}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented 8+ automation tools in C++ and Python, saving 20+ hours of manual work weekly and improving operational efficiency by 25\%.}
+      \resumeItem{Engineered PostgreSQL backend pipelines with automated data processing workflows, handling 10,000+ records daily.}
+      \resumeItem{Debugged and resolved critical performance bottlenecks across the frontend and backend stack, reducing page load times by 30\%.}
+      \resumeItem{Led a global team of 15 to deliver hackathons for 1,000+ participants annually, coordinating across multiple external teams.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Development Intern $|$ \textnormal{Java (Spring Boot), Vue.js, MySQL}}{Apr. 2025 -- Aug. 2025}
+    {\href{https://nakisa.com}{Nakisa} | Full-time}{Montréal, QC}
+    \resumeItemListStart
+      \resumeItem{Diagnosed and resolved 50+ critical software defects across 5+ enterprise web applications used by Fortune 500 companies.}
+      \resumeItem{Engineered 3+ Java backend services, fixing 20+ database bugs and improving query performance by 40\%.}
+      \resumeItem{Conducted systematic audits with Axe and Lighthouse, developing reproducible test processes to identify and eliminate issues.}
+      \resumeItem{Collaborated with UX, frontend, and systems teams to implement cross-functional improvements under tight deadlines.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects \href{https://knowojas.com/projects}{\small\textit{(more at knowojas.com)}}}
+    \resumeSubHeadingListStart
+
+\resumeProjectHeading
+    {\href{https://github.com/0jas0jas}{\textbf{CachyOS Open-Source Contributions}} $|$ C/C++, Bash, Linux Kernel, Arch Packaging}{2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Contributed bug fixes, optimizations, and packaging scripts to CachyOS, an Arch-based Linux distribution with an active user base.}
+      \resumeItem{Merged patches improving Linux kernel scheduler performance by 15\% for real-time and gaming workloads.}
+      \resumeItem{Developed Bash automation scripts and custom performance patches deployed to 10,000+ users; diagnosed low-level kernel and driver issues through independent research.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\href{https://github.com/0jas0jas/symlang}{\textbf{SymLang (McHacks Winner)}} $|$ JavaScript, TensorFlow.js, Computer Vision}{Feb. 2025}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented a real-time gesture recognition algorithm achieving 90\% accuracy across 15+ hand gestures.}
+      \resumeItem{Trained a custom TensorFlow.js classification model on 10,000+ samples; conducted research into signal processing and model optimization techniques.}
+      \resumeItem{Presented and demonstrated the system at McHacks 2025 to judges and technical audiences.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\href{https://nuclearapp.ca}{\textbf{Nuclear (AI Notetaking Startup)}} $|$ PyTorch, FastAPI, Next.js, Redis}{Jun. 2025}
+    \resumeItemListStart
+      \resumeItem{Built and deployed an ML inference pipeline (preprocessing, training, evaluation) via FastAPI, processing 500+ notes daily for 100+ active users.}
+      \resumeItem{Implemented semantic search with vector embeddings, cutting retrieval time by 60\% and reaching 95\% accuracy.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Bash, Java, JavaScript/TypeScript, OCaml, MIPS Assembly} \\
+     \textbf{Systems \& Tools}{: Linux, Linux Kernel, Git, Docker, GDB, PostgreSQL, FastAPI, PyTorch} \\
+     \textbf{Concepts}{: Embedded Systems, OOP, Algorithms \& Data Structures, OS Internals, Automation Scripting}
+    }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}

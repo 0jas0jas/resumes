@@ -35,3 +35,4 @@ I'll tell you the company name, role, and paste the job description. Then:
 - Include GitHub/live links for projects where relevant
 - Lead with the most impressive/relevant stuff for that specific role
 - If a skill or project isn't relevant to this job, cut it
+- Always include Nuclear (AI notetaking startup) and CCNA certification regardless of the role
